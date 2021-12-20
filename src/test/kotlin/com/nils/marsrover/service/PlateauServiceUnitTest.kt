@@ -26,8 +26,8 @@ internal class PlateauServiceUnitTest {
         val dimension = Coordinate(3, 5)
         val plateau = plateauService.create(dimension)
 
-        Assert.assertTrue("Unexpected plateau dimension X value", plateau.dimension.x === 3)
-        Assert.assertTrue("Unexpected plateau dimension Y value", plateau.dimension.y === 5)
+        Assert.assertTrue("Unexpected plateau dimension X value", plateau.dimension.x == 3)
+        Assert.assertTrue("Unexpected plateau dimension Y value", plateau.dimension.y == 5)
         Assert.assertTrue("Unexpected rover robots list size", plateau.roverRobots.isEmpty())
     }
 
